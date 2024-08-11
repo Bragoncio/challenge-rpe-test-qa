@@ -1,0 +1,17 @@
+{
+  "name": "challenge-rpe-test-qa",
+  "version": "1.0.0",
+  "description": "Projeto de Automação Desafio Challenge RPE",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "keywords": [
+    "RPE",
+    "Cypress",
+    "Web",
+    "Challenge"
+  ],
+  "author": "Leonardo Braga Protasio",
+  "license": "ISC"
+}

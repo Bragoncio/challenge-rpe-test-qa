@@ -13,5 +13,8 @@
     "Challenge"
   ],
   "author": "Leonardo Braga Protasio",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cypress": "^1.1.3"
+  }
 }

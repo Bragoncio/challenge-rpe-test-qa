@@ -6,7 +6,7 @@
       "saldo": "700.00",
       "confereSaldo": "700.0",
       "validadeCartao": "08/2025",
-      "validadeCartaoList": "2025-08-11"
+      "validadeCartaoList": "2025-08-12"
     },
     "clienteInativo": {
       "nome": "João da Silva",
@@ -15,7 +15,7 @@
       "saldo": "500.00",
       "confereSaldo": "500.0",
       "validadeCartao": "08/2025",
-      "validadeCartaoList": "2025-08-11"
+      "validadeCartaoList": "2025-08-12"
     },
     "novoCliente": {
       "nome": "Maria de Souza",
@@ -24,7 +24,7 @@
       "saldo": "300.00",
       "confereSaldo": "300.0",
       "validadeCartao": "08/2025",
-      "validadeCartaoList": "2025-08-11"
+      "validadeCartaoList": "2025-08-12"
     }
   }
   

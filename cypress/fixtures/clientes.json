@@ -1,0 +1,30 @@
+{
+    "clienteAtivo": {
+      "nome": "João da Silva",
+      "cpf": "123.456.789-00",
+      "status": "true",
+      "saldo": "700.00",
+      "confereSaldo": "700.0",
+      "validadeCartao": "08/2025",
+      "validadeCartaoList": "2025-08-11"
+    },
+    "clienteInativo": {
+      "nome": "João da Silva",
+      "cpf": "123.456.789-00",
+      "status": "false",
+      "saldo": "500.00",
+      "confereSaldo": "500.0",
+      "validadeCartao": "08/2025",
+      "validadeCartaoList": "2025-08-11"
+    },
+    "novoCliente": {
+      "nome": "Maria de Souza",
+      "cpf": "987.654.321-00",
+      "status": "true",
+      "saldo": "300.00",
+      "confereSaldo": "300.0",
+      "validadeCartao": "08/2025",
+      "validadeCartaoList": "2025-08-11"
+    }
+  }
+  

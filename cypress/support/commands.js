@@ -49,6 +49,16 @@ Cypress.Commands.add('navigateToListarCliente', () => {
     cy.url().should('include', '/desafioqa/listarCliente');
 });
 
+Cypress.Commands.add('navigateToIncluirVenda', () => {
+    cy.get('a[href="/desafioqa/incluirVenda"]').first().click({ force: true });
+    cy.url().should('include', '/desafioqa/incluirVenda');
+});
+
+Cypress.Commands.add('navigateToListarVenda', () => {
+    cy.get('a[href="/desafioqa/listarVenda"]').first().click({ force: true });
+    cy.url().should('include', '/desafioqa/listarVenda');
+});
+
 Cypress.Commands.add('preencherFormularioCliente', (nome, cpf, status, saldo) => {
     cy.get('input[name="nome"]').type(nome);
     cy.get('input[name="cpf"]').type(cpf);
@@ -86,6 +96,40 @@ Cypress.Commands.add('verificarClienteNaLista', (cliente, status) => {
             cy.get('td').eq(2).should('contain', cliente.confereSaldo);
             cy.get('td').eq(3).should('contain', cliente.validadeCartaoList);
         });
+    });
+});
+
+Cypress.Commands.add('incluirVenda', (cliente) => {
+    cy.get('select[name="cliente"]').select(cliente);
+
+    let valorAleatorio;
+    do {
+        valorAleatorio = (Math.random() * 1000).toFixed(2);
+    } while (valorAleatorio.endsWith('0'));
+
+    valorAleatorio = valorAleatorio.replace(',', '.');
+    valorAleatorio = `R$ ${valorAleatorio}`;
+
+    cy.wrap(valorAleatorio).as('valorTransacao');
+
+    cy.get('input[name="valorTransacao"]').type(valorAleatorio);
+    cy.get('button[id="botaoSalvar"]').click();
+    cy.get('#alertMessage')
+        .should('be.visible')
+        .and('contain', 'Venda realizada com sucesso');
+});
+
+
+Cypress.Commands.add('verificarHistoricoTransacoes', (cliente, valorTransacao) => {
+    cy.navigateToListarVenda();
+    cy.get('select[name="cliente"]').select('TODOS');
+    cy.get('input[type="submit"][value="Pesquisar"]').click();
+
+    cy.get('table tbody tr').contains('td', valorTransacao).parents('tr').within(() => {
+        cy.get('td').eq(0).should('contain', cliente);
+        cy.get('td').eq(1).should('contain', '123.456.789-00');
+        cy.get('td').eq(2).should('contain', '2024-08-12');
+        cy.get('td').eq(3).should('contain', valorTransacao);
     });
 });
 

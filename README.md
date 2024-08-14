@@ -1,56 +1,69 @@
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&height=250&color=00FA9A&text=RPE%20QA&descAlign=50&descAlignY=50&textBg=false&animation=twinkling&descSize=1&stroke=E6E6FA&section=header&reversal=false">
-  <h1 align="center">Projeto de Automação RPE QA FRONT</h1>
-</p> 
-
-<p align="center">
-  <a href="#-produto">Produto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-stack">Stack</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-estrutura">Estrutura</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-execução">Execução</a>
-</p> 
-
-<p align="center">
-  <img alt="License" src="https://img.shields.io/badge/cypress-%2317202C.svg?style=for-the-badge&logo=cypress&logoColor=white">
-  <img alt="License" src="https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black">
-  <img alt="License" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
+<h1 align="center">🚀 Projeto de Automação RPE QA FRONT</h1>
 </p>
 
-<p align = "center">
-<b> Participante Leonardo Braga Protasio </b>
+
+<p align="center">
+  <a href="#-produto">💻 Produto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-stack">⚙ Stack</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-objetivo">🎯 Objetivo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-estrutura">🌌 Estrutura</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-execução">⏩ Execução</a>
 </p>
+
+<p align="center">
+  <img alt="Cypress" src="https://img.shields.io/badge/cypress-%2317202C.svg?style=for-the-badge&logo=cypress&logoColor=white">
+  <img alt="JavaScript" src="https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black">
+  <img alt="GitHub" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
+</p>
+
+<p align="center">
+  <b>👤 Participante: Leonardo Braga Protasio</b>
+</p>
+
+---
 
 ## 💻 Produto
 
-<p> Projeto de Automação desenvolvido para atender o desafio RPE QA Front.</p>
+<p align="justify">
+O <strong>Projeto de Automação RPE QA FRONT</strong> foi desenvolvido para atender ao desafio RPE QA Front, com foco na automação de testes de qualidade para a interface de usuário.
+</p>
+
+---
 
 ## ⚙ Stack
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+Este projeto foi construído com as seguintes tecnologias:
 
-|                                        |           Tecnologias            |
-| :-------------------:                  |:--------------------------------:|
-| [Cypress](https://www.cypress.io/)  | [Javascript](https://www.javascript.com/) |   
+| **Tecnologia**   | **Descrição**                       |
+| ---------------- | ----------------------------------- |
+| <a href="https://www.cypress.io/"><img src="https://img.shields.io/badge/Cypress-00FA9A?style=for-the-badge&logo=cypress&logoColor=white"></a> | Framework de teste end-to-end para a web. |
+| <a href="https://www.javascript.com/"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"></a> | Linguagem de programação utilizada no desenvolvimento do projeto. |
+
+---
 
 ## 🎯 Objetivo
 
-Esse projeto de automação tem como objetivo a execução de uma grande quantidade de casos de teste de maneira confiável e repetitiva em ambientes diversos. 
-Isso proporciona uma capacidade aprimorada para dimensionar a execução de casos de teste. Além disso, busca-se aprimorar a qualidade global do software, 
-uma vez que os testes automatizados oferecem uma cobertura mais abrangente, especialmente na verificação de reincidência de defeitos antigos que já foram corrigidos (testes de regressão).
+<p align="justify">
+Este projeto de automação tem como objetivo garantir a execução confiável e repetitiva de um grande número de casos de teste em diversos ambientes. Além de proporcionar uma execução escalável, busca-se aprimorar a qualidade do software, oferecendo uma cobertura abrangente, especialmente em testes de regressão para verificar a reincidência de defeitos anteriormente corrigidos.
+</p>
+
+---
 
 ## 🌌 Estrutura
 
-Para organizar o projeto, ele foi dividido em várias pastas, cada uma destinada a funções específicas, proporcionando uma distribuição lógica e estruturada.
+A organização do projeto segue uma estrutura lógica, dividida em pastas específicas para cada função, facilitando a manutenção e evolução do código:
 
 - ### **challenge-rpe-test-qa**
-    - ***Fixtures***
-        - Inclui arquivos JSON que contêm dados estáticos usados para validar, manipular e lidar com dados nos testes.
+    - **Fixtures**
+      - Contém arquivos JSON com dados estáticos utilizados nos testes.
+    - **e2e**
+      - Contém arquivos de testes end-to-end (E2E), simulando o comportamento do usuário na aplicação.
+    - **support**
+      - Inclui configurações essenciais e comandos personalizados utilizados nos testes.
 
-    - ***e2e***
-        - Inclui arquivos JavaScript que contêm testes end-to-end (E2E) que simulam o comportamento do usuário na aplicação.
-
-    - ***support***
-        - Inclui arquivos JavaScript que especificam as configurações essenciais do projeto e comandos personalizados.
+---
 
 ## ⏩ Execução
 
